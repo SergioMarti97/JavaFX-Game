@@ -16,5 +16,4 @@ Las clases están organizadas en los siguientes paquetes, los cuales abarcan un 
 - input: contiene una clase que mapea las entradas de usuario y ofrece métodos para programar la lógica de los inputs de forma secuencial y no orientada a eventos.
 - graphics: contiene todas las clases relacionadas con los gráficos de la aplicación.
 
-## Implementación
 
