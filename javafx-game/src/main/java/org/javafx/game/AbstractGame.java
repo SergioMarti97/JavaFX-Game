@@ -1,4 +1,4 @@
-package game;
+package org.javafx.game;
 
 public abstract class AbstractGame {
 

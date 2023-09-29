@@ -1,4 +1,4 @@
-package game.clock;
+package org.javafx.game.clock;
 
 import javafx.animation.AnimationTimer;
 

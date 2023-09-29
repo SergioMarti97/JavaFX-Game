@@ -1,7 +1,7 @@
 package main.app;
 
-import game.GameApplication;
-import main.game.ExampleGame;
+import main.game.PanAndZoomExampleGame;
+import org.javafx.game.GameApplication;
 
 public class ShowcaseApp extends GameApplication {
 
@@ -9,7 +9,7 @@ public class ShowcaseApp extends GameApplication {
     public void init() throws Exception {
         super.init();
         setAppName("Game Showcase");
-        setGame(new ExampleGame());
+        setGame(new PanAndZoomExampleGame());
     }
 
 }

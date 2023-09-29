@@ -1,35 +1,35 @@
-package game;
+package org.javafx.game;
 
-import game.clock.GameClock;
-import game.input.Input;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import org.javafx.game.clock.GameClock;
+import org.javafx.game.input.Input;
 
 public class GameApplication extends Application {
 
     // Settings of the application
 
-    private String appName = "default";
+    protected String appName = "default";
 
-    private int width = 800;
+    protected int width = 800;
 
-    private int height = 600;
+    protected int height = 600;
 
     // Classes which manages internally the game
 
-    private AbstractGame game;
+    protected AbstractGame game;
 
-    private Input input;
+    protected Input input;
 
-    private GameClock clock;
+    protected GameClock clock;
 
     // Scene layout
 
-    private Canvas canvas;
+    protected Canvas canvas;
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -70,7 +70,7 @@ public class GameApplication extends Application {
     @Override
     public void stop() throws Exception {
         super.stop();
-        game.stop(this);
+
     }
 
     // Update and Render methods

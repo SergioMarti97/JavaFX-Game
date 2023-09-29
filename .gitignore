@@ -1,3 +1,5 @@
 .idea
-/target
 vm_options.txt
+/javafx-game/target
+/javafx-game-showcase/target
+/javafx-pan-and-zoom/target

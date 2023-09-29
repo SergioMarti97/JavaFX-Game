@@ -1,4 +1,4 @@
-package game.graphics;
+package org.javafx.game.graphics;
 
 /**
  * This interface adds the method "draw yourself"

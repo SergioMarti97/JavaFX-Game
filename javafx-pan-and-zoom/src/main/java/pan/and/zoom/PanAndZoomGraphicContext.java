@@ -1,13 +1,13 @@
 package pan.and.zoom;
 
-import game.GameApplication;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
 import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
-import vector.point2d.Vec2df;
-import vector.point2d.Vec2di;
+import org.geom.vector.vec2d.Vec2df;
+import org.geom.vector.vec2d.Vec2di;
+import org.javafx.game.GameApplication;
 
 public class PanAndZoomGraphicContext {
 
@@ -324,6 +324,7 @@ public class PanAndZoomGraphicContext {
         Vec2df worldTopLeft = getWorldTopLeft();
         Vec2df worldBottomRight = getWorldBottomRight();
         worldTopLeft.mul(-1);
+        // worldTopLeft.mul(-1).add(worldTopLeft);
         worldBottomRight.add(worldTopLeft);
         return worldBottomRight;
     }

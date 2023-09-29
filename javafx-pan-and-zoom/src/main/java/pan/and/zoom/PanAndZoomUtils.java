@@ -1,6 +1,7 @@
 package pan.and.zoom;
 
-import vector.point2d.Vec2df;
+
+import org.geom.vector.vec2d.Vec2df;
 
 public class PanAndZoomUtils {
 
