@@ -13,13 +13,13 @@
     <packaging>jar</packaging>
 
     <dependencies>
-        <dependency>
+        <!--<dependency>
             <groupId>org.javafx.game</groupId>
             <artifactId>javafx-game-project</artifactId>
             <version>1.0</version>
             <scope>system</scope>
             <systemPath>${maven.local.repository}/org/javafx/game/javafx-game/1.0/javafx-game-1.0.jar</systemPath>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.geom</groupId>
             <artifactId>java-geom</artifactId>
@@ -31,13 +31,9 @@
             <groupId>org.javafx.game</groupId>
             <artifactId>javafx-game</artifactId>
             <version>1.0</version>
-            <scope>compile</scope>
+            <scope>system</scope>
+            <systemPath>${maven.local.repository}/org/javafx/game/javafx-game/1.0/javafx-game-1.0.jar</systemPath>
         </dependency>
     </dependencies>
-
-    <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-    </properties>
 
 </project>
