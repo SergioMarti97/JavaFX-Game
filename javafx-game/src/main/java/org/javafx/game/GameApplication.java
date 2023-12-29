@@ -70,7 +70,7 @@ public class GameApplication extends Application {
     @Override
     public void stop() throws Exception {
         super.stop();
-
+        game.stop(this);
     }
 
     // Update and Render methods
