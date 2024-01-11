@@ -29,6 +29,10 @@ public class GameApplication extends Application {
 
     // Scene layout
 
+    protected Scene scene;
+
+    protected StackPane stackPane;
+
     protected Canvas canvas;
 
     @Override
@@ -42,11 +46,11 @@ public class GameApplication extends Application {
         canvas.setFocusTraversable(true);
 
         // Choose between canvas or image view...
-        StackPane pane = new StackPane(canvas);
+        stackPane = new StackPane(canvas);
 
         // bing width and height properties to the graphics display
-        canvas.widthProperty().bind(pane.widthProperty());
-        canvas.heightProperty().bind(pane.heightProperty());
+        canvas.widthProperty().bind(stackPane.widthProperty());
+        canvas.heightProperty().bind(stackPane.heightProperty());
 
         // Input
         input = new Input(canvas);
@@ -55,7 +59,7 @@ public class GameApplication extends Application {
         clock = new GameClock(this::update, this::render);
 
         // Set the scene
-        Scene scene = new Scene(pane, width, height);
+        scene = new Scene(stackPane, width, height);
         stage.setScene(scene);
         stage.setTitle(appName);
 
